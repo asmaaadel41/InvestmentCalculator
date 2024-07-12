@@ -1,0 +1,28 @@
+.investment-result {
+  margin: auto;
+  margin-top: 20px;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  table {
+    width: 100%;
+
+    thead {
+      th {
+        padding: 10px;
+        background-color: #ead9ff;
+      }
+    }
+
+    tbody {
+      background-color: #ead9ff;
+
+      td {
+        padding: 5px;
+      }
+    }
+
+  }
+}

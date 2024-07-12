@@ -1,0 +1,25 @@
+<div class="investment-result">
+  @if(investmentResults.length > 0){
+  <table>
+    <thead>
+      <tr>
+        <th>Year</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (result of investmentResults; track $index) {
+      <tr>
+        <td>{{ result.year }}</td>
+        <td>{{ result.amount | currency }}</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+  } @else{
+  <p>
+    No investment results found.<br />
+    Please enter your data.
+  </p>
+  }
+</div>

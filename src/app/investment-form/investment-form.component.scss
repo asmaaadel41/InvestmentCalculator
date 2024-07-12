@@ -1,0 +1,50 @@
+.investment-form {
+  width: 50%;
+  margin: auto;
+
+  .form-body {
+    border: 1px solid #ead9ff;
+    padding: 15px;
+    margin-bottom: 25px;
+
+    .form-control {
+      padding: 10px;
+      margin-bottom: 10px;
+
+      label {
+        margin-right: 10px;
+      }
+
+      input {
+        border: 1px solid #ead9ff;
+        padding: 5px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .form-submit {
+    text-align: center;
+
+    button {
+      width: 25%;
+      padding: 10px;
+      border: none;
+      font-size: 15px;
+      background-color: #ead9ff;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+      cursor: pointer;
+    }
+
+    button:first-child {
+      margin-right: 20px
+    }
+  }
+}

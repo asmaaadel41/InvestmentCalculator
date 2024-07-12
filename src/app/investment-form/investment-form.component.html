@@ -1,0 +1,51 @@
+<form class="investment-form" (ngSubmit)="calculateInvestment()">
+  <div class="form-body">
+    <div class="form-control">
+      <label for="initialAmount">Initial Investment Amount:</label>
+      <input
+        type="number"
+        id="initialAmount"
+        [(ngModel)]="initialAmount"
+        name="initialAmount"
+        required
+      />
+    </div>
+    <div class="form-control">
+      <label for="annualRate">Expected Annual Investment Rate (%):</label>
+      <input
+        type="number"
+        id="annualRate"
+        [(ngModel)]="annualRate"
+        name="annualRate"
+        required
+      />
+    </div>
+    <div class="form-control">
+      <label for="expectedReturn">Expected Return (%):</label>
+      <input
+        type="number"
+        id="expectedReturn"
+        [(ngModel)]="expectedReturn"
+        name="expectedReturn"
+        required
+      />
+    </div>
+    <div class="form-control">
+      <label for="duration">Duration (years):</label>
+      <input
+        type="number"
+        id="duration"
+        [(ngModel)]="duration"
+        name="duration"
+        required
+      />
+    </div>
+  </div>
+  <div class="form-submit">
+    <button (click)="resetForm()" type="reset">Reset</button>
+    <button type="submit">Calculate</button>
+  </div>
+</form>
+<app-investment-result
+  [investmentResults]="investmentResults"
+></app-investment-result>
